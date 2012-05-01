@@ -24,3 +24,6 @@ command TDC DiffChangesDiffToggle
 nnoremap § :CtrlP<CR>
 let g:ctrlp_map = '<c-p>'
 cmap cd. lcd %:p:h
+let g:solarized_termtrans=1
+colorscheme solarized
+set background=dark
