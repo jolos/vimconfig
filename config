@@ -18,7 +18,6 @@ set incsearch
 
 " custom commands
 nnoremap ! :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
-command TN NERDTreeToggle
 command TT TagbarToggle
 command TDC DiffChangesDiffToggle
 nnoremap § :CtrlP<CR>
@@ -27,3 +26,11 @@ cmap cd. lcd %:p:h
 let g:solarized_termtrans=1
 colorscheme solarized
 set background=dark
+nmap gb :bp<CR>
+nmap gB :bn<CR>
+nnoremap <silent> N :NERDTreeFind<CR>-
+nnoremap <silent> µ :NERDTreeToggle<CR>
+nnoremap <silent> ù :CtrlPMixed<CR>
+nnoremap <silent> & :CtrlPMRU<CR>
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+
