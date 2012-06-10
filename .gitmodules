@@ -40,3 +40,6 @@
 [submodule "bundle/taghighlight"]
 	path = bundle/taghighlight
 	url = https://github.com/abudden/TagHighlight.git
+[submodule "bundle/scala"]
+	path = bundle/scala
+	url = https://github.com/derekwyatt/vim-scala.git
