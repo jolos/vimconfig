@@ -28,9 +28,13 @@ colorscheme solarized
 set background=dark
 nmap gb :bp<CR>
 nmap gB :bn<CR>
-nnoremap <silent> N :NERDTreeFind<CR>-
+" nnoremap <silent> N :NERDTreeFind<CR>-
 nnoremap <silent> µ :NERDTreeToggle<CR>
-nnoremap <silent> ù :CtrlPMixed<CR>
-nnoremap <silent> & :CtrlPMRU<CR>
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
+nnoremap <silent> ,f :CtrlPMixed<CR>
+nnoremap <silent> ,r :CtrlPMRU<CR>
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_use_caching = 1
+let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
+
+nnoremap <silent> ,d :DiffChangesDiffToggle<CR>
